@@ -86,14 +86,14 @@ p{
     margin: 24px 0;
 }
 
-.bloque{
+blockquote{
     margin: 24px 0px 24px 0px ;
     padding: 16px 18px 16px 18px;
     border-radius: 8px;
     background: #D6D3D1;
 }
 
-.caption{
+figcaption{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
@@ -105,7 +105,7 @@ p{
     padding-top: 16px;
 
 }
-.ulist{
+ul{
    
     font-family: 'Open Sans';
     font-style: normal;
@@ -116,7 +116,8 @@ p{
 }
 
 
-.footer-header{
+footer,
+header{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -128,7 +129,10 @@ p{
     background: #44403C;
 }
 
-.linkColor{
+a{
     color: #BE185D;
     font-weight: 400;
+}
+figure{
+    margin: 32px 0;
 }
