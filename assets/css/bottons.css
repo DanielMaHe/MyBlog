@@ -1,0 +1,42 @@
+@import url(./colors.css);
+@import url(./size.css);
+
+.type--default{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ; */
+}
+.button{
+    
+    display: flex;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--default{
+    /* left: 106px;
+    top: 104px; */
+    color: black;
+
+}
+
+.button--primary{
+    background: #DB2777;
+    color: white;
+
+}
+
+.button--secondary{
+    background: #78716C;
+    color: white;
+
+}
+
+.hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+}

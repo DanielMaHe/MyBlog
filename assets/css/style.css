@@ -1,138 +1,155 @@
 @import url(./reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-
-body{
-    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+:root {
+}
+body {
+  font-family: var(--font-primary);
 }
 
-
-
-.container-sm{
-    max-width: 640px;
-    padding: 0 16px;
-    margin: auto;
+.container-sm {
+  max-width: 640px;
+  padding: 0 16px;
+  margin: auto;
 }
 .container,
-.container-md{
-    max-width: 768px;
-    padding: 0 16px;
-    margin: auto;
+.container-md {
+  max-width: 768px;
+  padding: 0 16px;
+  margin: auto;
 }
 
-.container-lg{
-    max-width: 1024px;
-    padding: 0 16px;
-    margin: auto;
+.container-lg {
+  max-width: 1024px;
+  padding: 0 16px;
+  margin: auto;
 }
 
-.container-xl{
-    max-width: 1280px;
-    padding: 0 16px;
-    margin: auto;
+.container-xl {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: auto;
 }
 
 /******************************************/
 
-.section-sm{
-    margin: 32px 0;
+.section-sm {
+  margin: 32px 0;
 }
-.section-md{
-    margin: 48px 0;
+.section-md {
+  margin: 48px 0;
 }
-.section-lg{
-    margin: 96px 0;
+.section-lg {
+  margin: 96px 0;
 }
-.section-xl{
-    margin: 144px 0;
+.section-xl {
+  margin: 144px 0;
 }
 
-h1{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    flex: none;
+.article {
+  font-family: "Open Sans";
+  color: #111827;
+}
+
+.article h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  /* flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
-    margin-top: 32;
+    flex-grow: 0; */
+  margin-top: 32;
 }
 
-h2{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    flex: none;
+.article h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  /* flex: none;
     order: 1;
     align-self: stretch;
-    flex-grow: 0;
-    margin: 56px 0px 24px 0px
+    flex-grow: 0; */
+  margin-top: 56px;
+  margin-bottom: 24px;
 }
 
-p{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
-    flex: none;
+.article p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  /* flex: none;
     order: 1;
     align-self: stretch;
-    flex-grow: 0;
-    margin: 24px 0;
+    flex-grow: 0; */
+  margin: 24px 0;
 }
 
-blockquote{
+.article strong {
+  font-weight: 600;
+}
+
+.article a {
+  color: #be185d;
+  font-weight: 400;
+}
+
+.article li {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 18px;
+}
+
+.article blockquote {
+  margin: 24px 0px;
+  padding: 16px 18px;
+  font-weight: 300px;
+  line-height: 32px;
+  border-left: 4px solid #d6d3d1;
+  font-style: italic;
+}
+
+/* .article blockquote{
     margin: 24px 0px 24px 0px ;
     padding: 16px 18px 16px 18px;
     border-radius: 8px;
+    font-weight: 400px;
     background: #D6D3D1;
+    font-style: italic;
+} */
+
+.article figure {
+  margin: 32px 0;
 }
 
-figcaption{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    padding-top: 16px;
-
-}
-ul{
-   
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
- 
+.article figcaption {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin-top: 16px;
 }
 
+.article img {
+  border-radius: 8px;
+}
 
 footer,
-header{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 120%;
-    color: #FFFFFF;
-    padding: 16px 0px 16px 0px;
-    text-align: center;
-    background: #44403C;
-}
-
-a{
-    color: #BE185D;
-    font-weight: 400;
-}
-figure{
-    margin: 32px 0;
+header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  color: #ffffff;
+  padding: 16px 0px 16px 0px;
+  text-align: center;
+  background: #44403c;
 }
