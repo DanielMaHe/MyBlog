@@ -76,18 +76,19 @@
     --blue-200:#BFDBFE;
     --blue-100:#DBEAFE;
     --blue-50:#EFF6FF;
+
     --black:#171717 ;
     --white:#FFFFFF ;
 
     --primary-ligther: var(--pink-100);
     --primary-ligth: var(--pink-300);
-    --primary:var(-pink-600);
+    --primary:var(--pink-600);
     --primary-dark: var(--pink-700);
     --primary-darker: var(--pink-900);
 
     --secondary-ligther:var(--Stone-100);
     --secondary-ligth: var(--Stone-300);
-    --secondary: var(-Stone-500);
+    --secondary: var(--Stone-500);
     --secondary-dark: var(--Stone-700);
     --secondary-darker: var(--Stone-900);
   
@@ -101,6 +102,6 @@
     --background-ligth : var(--gray-50);
     --background: var(--gray-100);
     --background-dark: var(--gray-200);
-    --background-darker: var(--gray-200);
+    --background-darker: var(--gray-300);
     
 }

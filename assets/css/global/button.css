@@ -1,0 +1,168 @@
+/* @import url(./colors.css);
+@import url(./size.css); */
+
+.button{
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0.75em 1em;
+    cursor: pointer;
+
+    gap: 03px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--default{
+    background-color: var(--background-darker) ;
+    color: var(--text);
+}
+
+.button--sm{
+    font-size: 0.8em;
+    padding: 0.5em 0.75em;
+
+}
+
+.button--lg{
+    font-size: 1.2em;
+    padding: 0.875em 1.5em;
+
+}
+
+.button-w-full{
+
+    font-size: 1em;
+    padding: 0.75em 5.75em;
+
+}
+
+
+
+.button--default:hover{
+    background-color: var(--gray-400)
+
+}
+
+.button--default:active{
+    background-color: var(--gray-500)
+}
+
+.button--default:focus{
+    outline: 3px solid var(--info);
+    outline-offset: 1px;
+
+}
+
+
+.button--default:disabled{
+    opacity: 0.6;
+    cursor: default;
+    background-color: var(--background-darker) ;
+
+}
+
+.button--primary{
+    background-color: var(--primary);
+    color: var(--white);
+
+}
+.button--primary:hover{
+    background-color: var(--primary-dark)
+
+}
+
+.button--primary:active{
+    background-color: var(--primary)
+}
+
+.button--primary:focus{
+    outline: 3px solid var(--info);
+    outline-offset: 1px;
+
+}
+
+
+.button--primary:disabled{
+    opacity: 0.6;
+    cursor: default;
+    background-color: var(--primary) ;
+
+}
+
+
+
+.button--secondary{
+    background-color: var(--secondary);
+    color: var(--white);
+
+}
+.button--secondary:hover{
+    background-color: var(--secondary-dark)
+
+}
+
+.button--secondary:active{
+    background-color: var(--secondary)
+}
+
+.button--secondary:focus{
+    outline: 3px solid var(--info);
+    outline-offset: 1px;
+
+}
+
+
+.button--secondary:disabled{
+    opacity: 0.6;
+    cursor: default;
+    background-color: var(--secondary) ;
+
+}
+
+/* 
+.type--default{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+}
+.button{
+    
+    
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--default{
+     left: 106px;
+    top: 104px; 
+    color: black;
+
+}
+
+.button--primary{
+    background: #DB2777;
+    color: white;
+
+}
+
+.button--secondary{
+    background: #78716C;
+    color: white;
+
+}
+
+.hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+} */
