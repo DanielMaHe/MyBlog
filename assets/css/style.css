@@ -1,10 +1,12 @@
 @import url(global.css);
+
+@import url(components/header.css);
 @import url(components/articules.css);
 
 
 
 
-footer,
+/* footer,
 header {
   font-style: normal;
   font-weight: 600;
@@ -14,4 +16,4 @@ header {
   padding: 16px 0px 16px 0px;
   text-align: center;
   background: #44403c;
-}
+} */
