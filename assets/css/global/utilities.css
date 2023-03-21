@@ -58,3 +58,10 @@
 .bg-color-secondary-ligth{
     background-color: var(--secondary-ligth);
 }
+
+.img__md{
+    height: 220px;
+    width: 319px;
+    border-radius: 8px;
+
+}
