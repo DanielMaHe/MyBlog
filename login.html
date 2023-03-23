@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <style>
+      form {
+        border: 1px solid var(--gray-400);
+        border-radius: 8px;
+        font-size: 0.9em;
+        width: 300px;
+        /* first form */
+        overflow: hidden;
+      }
+
+      input {
+        border-radius: 5px;
+        font-size: 0.9rem;
+        margin: 0;
+      }
+
+      .account_info {
+        padding: 20px;
+      }
+      .account_info label {
+        color: var(--secondary-dark);
+        display: block;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .account_action {
+        background-color: var(--background-dark);
+        border-top: 1px solid var(--gray-400);
+        padding: 20px;
+        /* second form */
+        /* border-bottom-left-radius: 8px ;
+        border-bottom-right-radius: 8px; */
+
+        /* whit flex */
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+
+      .account_action__button{
+        /* background-color: var(--primary); */
+        background: linear-gradient(var(--primary), var(--primary-darker));
+        color: var(--white);
+        border: 0;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        /* Whit float */
+        float: left;
+        
+
+      }
+
+      .account_action label{
+        color: var(--secondary);
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        /* Whit float */
+        float: right;
+      }
+    </style>
+    <section class="section-md">
+      <div class="container-md">
+        <form>
+          <fieldset class="account_info">
+            <label
+              >User Name:
+              <input type="text" name="userName" />
+            </label>
+            <label
+              >password:
+              <input type="password" name="password" />
+            </label>
+          </fieldset>
+          <fieldset class="account_action">
+            <input  
+            class=" account_action__button"
+            type="submit" 
+            name="submit"  />
+            <label for="remenber">
+            <input type="checkbox" name="remenber" id="remenber" required />
+            Stay signed in
+        </label>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
