@@ -1,0 +1,59 @@
+.Portfolio-sumary{
+    display: grid;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.Portfolio-sumary__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+   
+
+}
+
+.Portfolio-sumary__card{
+   display: grid;
+   gap: 1em;
+   padding: 1.5em;
+   background-color: var(--white);
+   
+}
+
+.Portfolio-sumary-card_header{
+    display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.Portfolio-sumary__icons{
+    display: flex;
+    height: 40px;
+    gap: 1em;
+    align-items: center;
+
+}
+.portfolio_arrow{
+    width: 1.131em;
+    height: 1.131em;
+    text-align: start;
+}
+
+.Portfolio-sumary__icons object{
+    /* flex: 1; */
+    /* padding: calc((40px - 100%) / 4) calc((40px - 100%) / 4); */
+    background-color: var(--background);
+
+}
+
+.Portfolio-sumary__text{
+    display: grid;
+    justify-content: left;
+    gap: 0.5em;
+}
+

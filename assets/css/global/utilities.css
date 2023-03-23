@@ -59,9 +59,21 @@
     background-color: var(--secondary-ligth);
 }
 
+.bg-color-background{
+    background-color: var(--background);
+}
+
 .img__md{
     height: 220px;
     width: 319px;
     border-radius: 8px;
+    object-fit: cover;
 
 }
+.logo_md{
+    width: 1.6em;
+    height: 1.6em;
+    /* padding: 0.2;*/
+    margin: 0.2em; 
+    grid-area: 1 / 1 / 2 / 2;
+  }
