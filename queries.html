@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+        body{
+            background-color: burlywood;
+            color: black;
+
+        }
+
+        /* Operator media querier */
+
+        /* Se puede definir el rango con el maximo o con el minimo */
+        /* @media (max-width: 992px){
+            body{
+            background-color: teal;
+            color: whitesmoke;
+
+        }
+        }
+
+        @media (max-width:412px){
+            body{
+            background-color: saddlebrown;
+            color:whitesmoke;
+
+        }
+        } */
+
+        /* Se le puede dar un rango definido */
+        /* @media (min-width: 412px) and (max-width: 992px){
+            body{
+            background-color: teal;
+            color: whitesmoke;
+            }
+        } */
+
+        /* "and" operator */
+
+        /* Se pude establecer diferentes stylos segun la orientacion */
+            /* Orizontal */
+        /* @media (max-width: 992px) and (orientation: landscape){
+            body{
+            background-color: teal;
+            color: whitesmoke;
+
+        }
+        } */
+
+        /* "orientation" */
+            /* Vertical */
+        /* @media (max-width:412px) and (orientation: portrait){
+            body{
+            background-color: saddlebrown;
+            color:whitesmoke;
+
+        }
+        } */
+
+        /* "only"=> Previene que navegadores antiguos carguen estilos de querie no soportados */
+        /* "screen"=> Destinado principalmente a las pantallas */
+
+        @media only screen and (max-width: 400px){
+            body{
+                background-color: saddlebrown;
+            color:whitesmoke;
+
+        }
+
+         /* oculta el parrafo pero conserva el espacio en la pantallas */
+        p{
+            visibility: hidden;
+        }
+
+        /* Oculta tanto el parrafo como el espacio en pantalla */
+        /* p{
+            display: none;
+        } */
+        }
+
+
+        @media only screen and (min-width: 640px){
+            body{
+                background-color: teal;
+            color: whitesmoke;
+
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="section-md">
+        <div class="container-md">
+            <h2>Any text here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati voluptates a eum adipisci perferendis, 
+                eligendi debitis, aspernatur voluptatem aut tempora.
+                 Aliquid esse cupiditate harum. Velit sequi molestiae est officiis.</p>
+                 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo harum quibusdam adipisci dolorem, veritatis minima nisi, quae totam vitae consequuntur laudantium voluptate optio magnam ratione, neque modi excepturi sapiente nihil.</div>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>

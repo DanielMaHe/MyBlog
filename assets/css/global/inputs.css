@@ -1,0 +1,77 @@
+.input{
+    width: 100%;
+    height: 2.5em;
+    border-radius: .375em;
+    padding: 0.5em .75em;
+}
+
+.input__default{
+    border: 1px solid var(--gray-700);
+    color: var(--gray-700);
+}
+
+.input__default:focus{
+    outline: 3px solid var(--info);
+    outline-offset: 1px;
+
+}
+.input__default:invalid{
+    border: 1px solid var(--Red-500);
+    color: var(--Red-500);
+
+}
+
+.checkbox{
+    min-width:1em;
+    height: 1em;
+    border: 1px solid var(--gray-700);
+
+}
+
+.checkbox:focus{
+    outline: 3px solid var(--info);
+}
+
+/* .checkbox:checked{
+    color: white;
+    background-color: red;
+} */
+.checkbox:checked + label {
+    color: white;
+    background-color: red;
+  }
+
+/* input:checked ~ .checkmark {
+    background-color: blue;
+    }
+     */
+
+/* .input__icon{
+    background-image: url('success.png');
+} */
+/* 
+div#is-relative{
+    max-width: 14.67em;
+    position: absolute; */
+    /* height: 14px;*/
+    /* width: 10.67px;  */
+/* top: 0.67px;
+left: 2.67;
+    align-items: center; */
+  }
+  
+  /* El icono debe ser "position: absolute"
+   * Ademas le damos un "display: block" y lo posicionamos */
+  /* #icon{
+    position: absolute;
+    display: block;
+    bottom: .5rem;
+    right: 1rem;
+    left: 16.67%;
+    
+    user-select: none;
+    cursor: pointer;
+  }
+  input.input{
+    padding-left: 2.5rem;
+  } */

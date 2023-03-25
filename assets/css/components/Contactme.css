@@ -1,0 +1,62 @@
+.contactme_inputs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    /* text-align: left; */
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+   
+
+}
+/* .contactme-sumary_content{
+    display: grid;
+    gap: 2em;
+} */
+
+
+.contactme_headers{
+    display: grid;
+    gap: .25em;
+    margin-bottom: 2em;
+}
+.contactme-sumary_checbox{
+display: grid;
+grid-template-rows: auto;
+margin-bottom: 2em;
+    
+}
+.contactme-sumary_checbox label{
+    padding: 0;
+    margin: 0;
+    /* *overflow: hidden */
+}
+
+.input-__select{
+    display: ;
+
+}
+.contactme-sumary_checbox input[type="checkbox"]{
+    display: none;
+}
+
+.contactme-sumary_checbox input[type="checkbox"] + label{
+    border-radius: 1 px solid black;
+    background-color: red;
+}
+
+ /* .contactme-sumary_checkbox label {
+    vertical-align: bottom;
+    position: relative;
+ } */
+ /*
+.contactme-sumary_checkbox input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+} */
