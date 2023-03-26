@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <!-- <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  /> -->
+  <body>
 
     <form>
+
+      <!-- <input type="email" name="email" class="input input__default" > -->
+
+      <label class=" overline tex-xs ligth">
+        Input label
+        <input 
+        class=" input input--error"
+        type="email"
+        placeholder="User name"
+        >
+    </label>
+    <span class="input__message input__message--help tex-sm ligth">Input help text</span>
+    <br>
+    <br>
+
+      <label class=" overline tex-xs ligth">
+        Input label
+        <input 
+        class=" input input--error"
+        type="email"
+        placeholder="User name"
+        >
         
-        <!-- <input type="email" name="email" class="input input__default" > -->
-        <br>
-        <br>
+    </label>
+        <span class="input__message input__message--error tex-sm regular"> Error Mesage</span>
+      
+      <br />
+      <br />
 
-        <div id="is-relative">
-            <span id="icon">
-                <i class="ri-user-fill ri-sm"></i>
-            </span>
-            <input type="password" class="input">
-          
-          </div>
+      <label class="input_icon tex-md ligth">
+        <span class="icon">
+          <i class="ri-user-fill ri-sm"></i>
+        </span>
+        <input type="email" class="input input-whit-icon" />
+      </label>
+      <br>
+      <br>
 
+      <select class="select">
+        <option value="0" disabled  selected hidden >Select one option</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+      </select>
+      
     </form>
-    
-</body>
+  </body>
 </html>

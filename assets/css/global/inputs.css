@@ -1,26 +1,42 @@
 .input{
     width: 100%;
-    height: 2.5em;
+    height: 2.5rem;
     border-radius: .375em;
     padding: 0.5em .75em;
-}
-
-.input__default{
+    color: var(--text);
     border: 1px solid var(--gray-700);
-    color: var(--gray-700);
 }
 
-.input__default:focus{
+
+.input:focus{
     outline: 3px solid var(--info);
     outline-offset: 1px;
 
 }
-.input__default:invalid{
+.input:invalid{
     border: 1px solid var(--Red-500);
     color: var(--Red-500);
 
 }
 
+.input-message{
+    display: block;
+    margin: 25rem 0;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+}
+
+.input-message__help{
+    color: var(--gray-500);
+
+}
+.input__message--error{
+    color: var(--error);
+}
+.input-error{
+    border: 1px solid var(--error);
+}
 .checkbox{
     min-width:1em;
     height: 1em;
@@ -32,23 +48,53 @@
     outline: 3px solid var(--info);
 }
 
+.select{
+    color: var(--gray-700);
+    width: 100%;
+    padding: .5rem .75rem;
+    background-color:  var(--white);
+    border-radius: .375rem;
+    border: 1px solid var(--gray-700);
+    /* background: red; */
+    appearance: none;
+    background-image: url(/assets/images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+
+    
+}
+
 /* .checkbox:checked{
     color: white;
     background-color: red;
 } */
-.checkbox:checked + label {
+
+/* .checkbox:checked + label {
     color: white;
     background-color: red;
-  }
+  } */
 
 /* input:checked ~ .checkmark {
     background-color: blue;
     }
      */
 
-/* .input__icon{
-    background-image: url('success.png');
-} */
+ .input_icon{
+    position: relative;
+    
+} 
+
+.icon{
+    position: absolute;
+    left: .9169rem;
+    top: 0rem;
+    color: var(--gray-500);
+}
+
+.input-whit-icon{
+    padding-left: 2.5rem;
+}
 /* 
 div#is-relative{
     max-width: 14.67em;
@@ -58,7 +104,7 @@ div#is-relative{
 /* top: 0.67px;
 left: 2.67;
     align-items: center; */
-  }
+  /* } */
   
   /* El icono debe ser "position: absolute"
    * Ademas le damos un "display: block" y lo posicionamos */
