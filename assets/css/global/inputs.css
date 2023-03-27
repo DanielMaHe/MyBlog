@@ -8,33 +8,40 @@
 }
 
 
-.input:focus{
+.input:focus,
+.select:focus{
     outline: 3px solid var(--info);
     outline-offset: 1px;
 
 }
-.input:invalid{
+.input:invalid,
+.select:invalid{
     border: 1px solid var(--Red-500);
     color: var(--Red-500);
 
 }
 
-.input-message{
+.input-message,
+.select-message{
     display: block;
-    margin: 25rem 0;
+    margin: 4px 0;
     font-size: .875rem;
     line-height: 1.3125rem;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
-.input-message__help{
+.input--message-help,
+.select--message-help{
     color: var(--gray-500);
 
 }
-.input__message--error{
+.input--message-error,
+.select--message-error{
     color: var(--error);
 }
-.input-error{
+.input-error,
+.select-error{
     border: 1px solid var(--error);
 }
 .checkbox{
@@ -55,32 +62,19 @@
     background-color:  var(--white);
     border-radius: .375rem;
     border: 1px solid var(--gray-700);
-    /* background: red; */
+
+    cursor: pointer;
+    padding-right: 2.5rem;
+
     appearance: none;
-    background-image: url(/assets/images/Vector.svg);
+    background-image: url(../../images/arrowDown.svg);
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: center;
-
-    
+    background-position-x: calc(100% - 17.33px);
+       
 }
 
-/* .checkbox:checked{
-    color: white;
-    background-color: red;
-} */
-
-/* .checkbox:checked + label {
-    color: white;
-    background-color: red;
-  } */
-
-/* input:checked ~ .checkmark {
-    background-color: blue;
-    }
-     */
-
- .input_icon{
+ .input-icon{
     position: relative;
     
 } 
@@ -92,32 +86,60 @@
     color: var(--gray-500);
 }
 
-.input-whit-icon{
+.input--whit-icon{
     padding-left: 2.5rem;
 }
-/* 
-div#is-relative{
-    max-width: 14.67em;
-    position: absolute; */
-    /* height: 14px;*/
-    /* width: 10.67px;  */
-/* top: 0.67px;
-left: 2.67;
-    align-items: center; */
-  /* } */
-  
-  /* El icono debe ser "position: absolute"
-   * Ademas le damos un "display: block" y lo posicionamos */
-  /* #icon{
-    position: absolute;
-    display: block;
-    bottom: .5rem;
-    right: 1rem;
-    left: 16.67%;
-    
-    user-select: none;
+
+/* ========================= */
+
+.radio{
+    display: flex;
+    gap: .5rem;
+    align-items: baseline;
     cursor: pointer;
-  }
-  input.input{
-    padding-left: 2.5rem;
-  } */
+}
+ 
+.radio__input{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    /* Quita el imput default */
+    appearance: none;
+    border: 1px solid var(--gray-500);
+    border-radius: 50%;
+    
+}
+.radio__input:checked{
+    border: 4px solid var(--primary);
+}
+
+.radio__input:focus{
+    outline: 3px solid var(--info);
+}
+
+
+.radio__message{
+    display: block;
+    color: var(--gray-500);
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 300;
+} 
+
+.radio-group{
+
+    display: flex;
+    gap: 0.75;
+
+} 
+
+.radio--group-vertical{
+    flex-direction: column;
+
+}
+
+.radio--group-horizontal{
+
+    flex-direction: row;
+    
+}
