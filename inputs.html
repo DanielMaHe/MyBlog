@@ -1,142 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inputs</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<!-- <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <!-- <link
     href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
     rel="stylesheet"
   /> -->
 
-<body class="section-md">
+  <body class="section-md">
+    <form>
+      <div class="container-md">
+        <!-- <input type="email" name="email" class="input input__default" > -->
 
-  <form>
-    <div class="container-md">
-      <!-- <input type="email" name="email" class="input input__default" > -->
+        <label class="overline tex-xs ligth">
+          Input label
+          <input
+            class="input input-error"
+            type="email"
+            placeholder="User name"
+          />
+        </label>
+        <span class="input-message input--message-help tex-sm ligth"
+          >Input help text</span
+        >
+        <br />
+        <br />
 
-      <label class=" overline tex-xs ligth">
-        Input label
-        <input class=" input input-error" type="email" placeholder="User name">
-      </label>
-      <span class="input-message input--message-help tex-sm ligth">Input help text</span>
-      <br>
-      <br>
+        <label class="overline tex-xs ligth">
+          Input label
+          <input
+            class="input input-error"
+            type="email"
+            placeholder="User name"
+          />
+        </label>
+        <span class="input-message input--message-error tex-sm regular">
+          Error Mesage</span
+        >
 
-      <label class=" overline tex-xs ligth">
-        Input label
-        <input class=" input input-error" type="email" placeholder="User name">
-      </label>
-      <span class="input-message input--message-error tex-sm regular"> Error Mesage</span>
+        <br />
+        <br />
 
-      <br />
-      <br />
+        <label class="input-icon tex-md ligth">
+          <span class="icon">
+            <i class="ri-user-fill ri-sm"></i>
+          </span>
+          <input type="email" class="input input--whit-icon" />
+        </label>
+        <br />
+        <br />
 
-      <label class="input-icon tex-md ligth">
-        <span class="icon">
-          <i class="ri-user-fill ri-sm"></i>
-        </span>
-        <input type="email" class="input input--whit-icon" />
-      </label>
-      <br>
-      <br>
+        <label class="overline tex-xs ligth">
+          Input label
+          <select class="select select-error input--message-error">
+            <option value="0" disabled selected hidden>
+              Select one option
+            </option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+          </select>
+        </label>
 
-      <label class="overline tex-xs ligth">
-        Input label
-        <select class="select select-error input--message-error">
-          <option value="0" disabled selected hidden>Select one option</option>
-          <option value="1">A</option>
-          <option value="2">B</option>
-          <option value="3">C</option>
-        </select>
-      </label>
-
-      <br>
-      <br>
-      <div class="radio">
-        <input id="radio" name="radio" type="radio" class="radio__input">
-        <div>
-          <label for="radio" class="tex-sm ligth">Option</label>
-          <span class="radio__message">Help Text</span>
-          <!-- <input id="radio" type="radio" name="radio" class="--">
+        <br />
+        <br />
+        <div class="radio">
+          <input id="radio" name="radio" type="radio" class="radio__input" />
+          <div>
+            <label for="radio" class="tex-sm ligth">Option</label>
+            <span class="radio__message">Help Text</span>
+            <!-- <input id="radio" type="radio" name="radio" class="--">
     <label for="radio" class="tex-sm ligth">Option</label>  -->
-        </div>
-      </div>
-      <br>
-      <br>
-      <div>
-        <h2 class="heading-sm tex-lg regular">Select one</h2>
-        <br>
-        <div class="radio-group radio--group-vertical">
-          <div class="radio">
-            <input id="radio1" name="group_1" type="radio" class="radio__input">
-            <div>
-              <label for="radio1" class="tex-sm ligth">Option</label>
-              <span class="radio__message">Help Text</span>
-              <!-- <input id="radio" type="radio" name="group_1" class="--">
-        <label for="radio" class="tex-sm ligth">Option</label>  -->
-            </div>
-          </div>
-          <div class="radio">
-            <input id="radio2" name="group_1" type="radio" class="radio__input">
-            <div>
-              <label for="radio2" class="tex-sm ligth">Option</label>
-              <span class="radio__message">Help Text</span>
-              <!-- <input id="radio" type="radio" name="group_1" class="--">
-        <label for="radio" class="tex-sm ligth">Option</label>  -->
-            </div>
-          </div>
-          <div class="radio">
-            <input id="radio2" name="group_1" type="radio" class="radio__input">
-            <div>
-              <label for="radio2" class="tex-sm ligth">Option</label>
-              <span class="radio__message">Help Text</span>
-              <!-- <input id="radio" type="radio" name="radio" class="--">
-        <label for="radio" class="tex-sm ligth">Option</label>  -->
-            </div>
           </div>
         </div>
-      </div>
+        <br />
+        <br />
+        <div>
+          <h2 class="heading-sm tex-lg regular">Select one</h2>
+          <br />
+          <div class="radio-group radio--group-vertical">
+            <div class="radio">
+              <input
+                id="radio1"
+                name="group_1"
+                type="radio"
+                class="radio__input"
+              />
+              <div>
+                <label for="radio1" class="tex-sm ligth">Option</label>
+                <span class="radio__message">Help Text</span>
+                <!-- <input id="radio" type="radio" name="group_1" class="--">
+        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+            <div class="radio">
+              <input
+                id="radio2"
+                name="group_1"
+                type="radio"
+                class="radio__input"
+              />
+              <div>
+                <label for="radio2" class="tex-sm ligth">Option</label>
+                <span class="radio__message">Help Text</span>
+                <!-- <input id="radio" type="radio" name="group_1" class="--">
+        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+            <div class="radio">
+              <input
+                id="radio2"
+                name="group_1"
+                type="radio"
+                class="radio__input"
+              />
+              <div>
+                <label for="radio2" class="tex-sm ligth">Option</label>
+                <span class="radio__message">Help Text</span>
+                <!-- <input id="radio" type="radio" name="radio" class="--">
+        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <br>
-      <div>
+        <br />
+        <div>
+          <h2 class="heading-sm tex-lg regular">Select one</h2>
+          <br />
+          <div class="radio-group radio--group-horizontal">
+            <div class="radio">
+              <input
+                id="radio1"
+                name="group_2"
+                type="radio"
+                class="radio__input"
+              />
+              <div>
+                <label for="radio1" class="tex-sm ligth">Option</label>
+                <span class="radio__message">Help Text</span>
+                <!-- <input id="radio" type="radio" name="group_2" class="--">
+        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+            <div class="radio">
+              <input
+                id="radio2"
+                name="group_2"
+                type="radio"
+                class="radio__input"
+              />
+              <div>
+                <label for="radio2" class="tex-sm ligth">Option</label>
+                <span class="radio__message">Help Text</span>
+                <!-- <input id="radio" type="radio" name="group_2" class="--">
+        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+            <div class="radio">
+              <input
+                id="radio2"
+                name="group_2"
+                type="radio"
+                class="radio__input"
+              />
+              <div>
+                <label for="radio2" class="tex-sm ligth">Option</label>
+                <span class="radio__message">Help Text</span>
+                <!-- <input id="radio" type="radio" name="radio" class="--">
+        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
         <h2 class="heading-sm tex-lg regular">Select one</h2>
-        <br>
-        <div class="radio-group radio--group-horizontal">
-          <div class="radio">
-            <input id="radio1" name="group_2" type="radio" class="radio__input">
+        <br />
+        <div class="checkbox">
+          <input
+            id="checkbox"
+            name="checkbox"
+            type="checkbox"
+            class="checkbox__input"
+          />
+          <div>
+            <label for="checkbox" class="tex-sm ligth">Option</label>
+            <span class="checkbox__message">Help Text</span>
+          </div>
+        </div>
+        <br />
+
+        <h2 class="heading-sm tex-lg regular">Select one</h2>
+        <br />
+        <div class="checkbox-group checkbox--group-vertical">
+          <div class="checkbox">
+            <input
+              id="checkbox1"
+              name="group_1"
+              type="checkbox"
+              class="checkbox__input"
+            />
             <div>
-              <label for="radio1" class="tex-sm ligth">Option</label>
-              <span class="radio__message">Help Text</span>
-              <!-- <input id="radio" type="radio" name="group_2" class="--">
-        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              <label for="checkbox1" class="tex-sm ligth">Option</label>
+              <span class="checkbox__message">Help Text</span>
+              <!-- <input id="checkbox" type="checkbox" name="group_1" class="--">
+        <label for="checkbox" class="tex-sm ligth">Option</label>  -->
             </div>
           </div>
-          <div class="radio">
-            <input id="radio2" name="group_2" type="radio" class="radio__input">
+          <div class="checkbox">
+            <input
+              id="checkbox2"
+              name="group_1"
+              type="checkbox"
+              class="checkbox__input"
+            />
             <div>
-              <label for="radio2" class="tex-sm ligth">Option</label>
-              <span class="radio__message">Help Text</span>
-              <!-- <input id="radio" type="radio" name="group_2" class="--">
-        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              <label for="checkbox2" class="tex-sm ligth">Option</label>
+              <span class="checkbox__message">Help Text</span>
+              <!-- <input id="checkbox" type="checkbox" name="group_1" class="--">
+        <label for="checkbox" class="tex-sm ligth">Option</label>  -->
             </div>
           </div>
-          <div class="radio">
-            <input id="radio2" name="group_2" type="radio" class="radio__input">
+          <div class="checkbox">
+            <input
+              id="checkbox2"
+              name="group_1"
+              type="checkbox"
+              class="checkbox__input"
+            />
             <div>
-              <label for="radio2" class="tex-sm ligth">Option</label>
-              <span class="radio__message">Help Text</span>
-              <!-- <input id="radio" type="radio" name="radio" class="--">
-        <label for="radio" class="tex-sm ligth">Option</label>  -->
+              <label for="checkbox2" class="tex-sm ligth">Option</label>
+              <span class="checkbox__message">Help Text</span>
+              <!-- <input id="checkbox" type="checkbox" name="checkbox" class="--">
+        <label for="checkbox" class="tex-sm ligth">Option</label>  -->
             </div>
           </div>
         </div>
-      </div>
-  </form>
-</body>
 
+        <br />
+        <div>
+          <h2 class="heading-sm tex-lg regular">Select one</h2>
+          <br />
+          <div class="checkbox-group checkbox--group-horizontal">
+            <div class="checkbox">
+              <input
+                id="checkbox1"
+                name="group_2"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox1" class="tex-sm ligth">Option</label>
+                <span class="checkbox__message">Help Text</span>
+                <!-- <input id="checkbox" type="checkbox" name="group_2" class="--">
+        <label for="checkbox" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+            <div class="checkbox">
+              <input
+                id="checkbox2"
+                name="group_2"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox2" class="tex-sm ligth">Option</label>
+                <span class="checkbox__message">Help Text</span>
+                <!-- <input id="checkbox" type="checkbox" name="group_2" class="--">
+        <label for="checkbox" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+            <div class="checkbox">
+              <input
+                id="checkbox2"
+                name="group_2"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox2" class="tex-sm ligth">Option</label>
+                <span class="checkbox__message">Help Text</span>
+                <!-- <input id="checkbox" type="checkbox" name="checkbox" class="--">
+        <label for="checkbox" class="tex-sm ligth">Option</label>  -->
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
