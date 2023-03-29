@@ -9,27 +9,38 @@
   </head>
   <body>
     <header class="header">
-      <div class="container-lg">
-        <nav class="navbar">
+      <div class="container-lg" >
+        <nav class="navbar" >
+          <input type="checkbox" id="menu-mobile">
           <a
-            href="./index.html"
+            href="index.html"
             class="navbar__logo heading-md semibold text-decoration-none"
           >
+        
             <span>Daniel Martínez</span>
+
+            <label for="menu-mobile" id="toggle-close">
+              <i class="ri-close-fill ri-sm"></i>
+            </label>
+  
+            <label for="menu-mobile" id="toggle-open">
+              <i class="ri-menu-fill ri-sm"></i>
+            </label>
           </a>
-          <ul class="navbar__links list-style-none">
+
+          <ul class="navbar__links list-style-none expandable">
             <li>
               <a href="Article.html" class="link text-md semibold">Articles</a>
             </li>
             <li>
-              <a href="#" class="link text-md semibold">Portfolio</a>
+              <a href="./portfolio.html" class="link text-md semibold">Portfolio</a>
             </li>
             <li>
               <a href="./About.html" class="link text-md semibold">About</a>
             </li>
             <li>
               <a
-                href="#"
+                href="./Contactme.html"
                 class="button button--primary button--sm text-decoration-none ml-4"
                 >Contac me</a
               >
@@ -41,7 +52,7 @@
     <section class="section-padding-sm bg-color-secondary-ligth">
       <div class="container-lg">
         <h2 class="heading-xl regular">
-          Hi! I’m <span class="semibold color-primary">Daniel Martínez</span>,
+          Hi! I'm <span class="semibold color-primary">Daniel Martínez</span>,
           full stack developer looking for new adventures
         </h2>
 
@@ -165,7 +176,7 @@
           Can I help you?
         </h2>
         <a
-          href="#"
+          href="./Contactme.html"
           class="button button--primary button--lg text-decoration-none"
           >Get in touch!</a
         >

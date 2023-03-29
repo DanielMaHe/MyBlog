@@ -9,27 +9,38 @@
   </head>
   <body>
     <header class="header">
-      <div class="container-lg">
-        <nav class="navbar">
+      <div class="container-lg" >
+        <nav class="navbar" >
+          <input type="checkbox" id="menu-mobile">
           <a
-            href="./index.html"
+            href="index.html"
             class="navbar__logo heading-md semibold text-decoration-none"
           >
+        
             <span>Daniel Martínez</span>
+
+            <label for="menu-mobile" id="toggle-close">
+              <i class="ri-close-fill ri-sm"></i>
+            </label>
+  
+            <label for="menu-mobile" id="toggle-open">
+              <i class="ri-menu-fill ri-sm"></i>
+            </label>
           </a>
-          <ul class="navbar__links list-style-none">
+
+          <ul class="navbar__links list-style-none expandable">
             <li>
               <a href="Article.html" class="link text-md semibold">Articles</a>
             </li>
             <li>
-              <a href="#" class="link text-md semibold">Portfolio</a>
+              <a href="./portfolio.html" class="link text-md semibold">Portfolio</a>
             </li>
             <li>
               <a href="./About.html" class="link text-md semibold">About</a>
             </li>
             <li>
               <a
-                href="#"
+                href="./Contactme.html"
                 class="button button--primary button--sm text-decoration-none ml-4"
                 >Contac me</a
               >
@@ -38,7 +49,7 @@
         </nav>
       </div>
     </header>
-    <section class="section-lg">
+    <section class="section-md">
       <main class="container-lg contactme-sumary_content">
         <div class="text-alingth-center contactme_headers">
           <h2 class="heading-lg semibold">Contact Me</h2>
@@ -53,92 +64,99 @@
           <label for=""
             >FIRST NAME<input
               type="text"
-              name=""
-              id=""
               class="input input__default"
               placeholder="Jhon"
           /></label>
           <label for=""
             >LAST NAME<input
               type="text"
-              name=""
-              id=""
               class="input input__default"
               placeholder="Statman"
           /></label>
           <label for=""
             >E-MAIL<input
               type="email"
-              name=""
-              id=""
               class="input input__default"
               placeholder="Jhon@mail.com"
           /></label>
           <label for=""
             >COMPANI<input
               type="text"
-              name=""
-              id=""
               class="input input__default"
               placeholder="Company SA"
           /></label>
           <label for=""
             >PHONE<input
-              type="tel"
-              name=""
-              id=""
+              type="number"
               class="input input__default"
               placeholder="987654321"
           /></label>
-          <label for=""
-            >COUNTRY<select name="" id="" class="input input__default input-__select">
-              <option value="" disabled hidden selected>
+          <label class="overline tex-xs ligth">
+            Country
+            <select class="select select-error input--message-error">
+              <option value="0" disabled selected hidden>
                 Select one option
               </option>
-              <option value="">Mexico</option>
-              <option value="">Peru</option>
-              <option value="">Chile</option>
-              <option value="">EE UU</option>
-              <option value="">Chinese</option>
-            </select></label
-          >
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+            </select>
+          </label>
+
         </div>
         <div class="contactme-sumary_checbox ">
-            <p class=" text-xl ligth ove
-            ">HOW CAN I HELP YOU?</p>
-          <label class="text-sm ligth checkbox-label"
-            ><input
-              type="checkbox"
-              name=""
-              value=""
-              class="checkbox"
-            /><span>Job offer</span>
-            <span class="tex-xs ligth checkbox-message">If you are looking to expand your team</span></label
-          >
-          <label class="text-sm ligth"
-            ><input
-              type="checkbox"
-              name=""
-              value=""
-              class="checkbox"
-            />Proyect offer</label
-          >
-          <label class="text-sm ligth"
-            ><input
-              type="checkbox"
-              name=""
-              value=""
-              class="checkbox"
-            />Colaboration</label
-          >
-          <label class="text-sm ligth"
-            ><input
-              type="checkbox"
-              name=""
-              value=""
-              class="checkbox"
-            />Other</label
-          >
+          <h2 class=" tex-xs ligth overline">How can I help you?</h2>
+
+          <div class="checkbox-group checkbox--group-vertical">
+            <div class="checkbox">
+              <input
+                id="checkbox1"
+                name="group_1"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox1" class="tex-sm ligth">Job Offer</label>
+                <span class="checkbox__message">If you are looking to expand your team</span>
+              </div>
+            </div>
+            <div class="checkbox">
+              <input
+                id="checkbox2"
+                name="group_1"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox2" class="tex-sm ligth">Project Offer</label>
+                <span class="checkbox__message">If you are looking to expand your team</span>
+              </div>
+            </div>
+            <div class="checkbox">
+              <input
+                id="checkbox3"
+                name="group_1"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox3" class="tex-sm ligth">Collaboration</label>
+                <span class="checkbox__message">If you are looking to expand your team</span>
+              </div>
+            </div>
+            <div class="checkbox">
+              <input
+                id="checkbox4"
+                name="group_1"
+                type="checkbox"
+                class="checkbox__input"
+              />
+              <div>
+                <label for="checkbox4" class="tex-sm ligth">Other</label>
+              </div>
+            </div>
+          </div>
+         
         </div>
         <button class="button button--primary w-full">Send</button>
         </div>

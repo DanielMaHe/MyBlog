@@ -45,12 +45,6 @@
 .select-error{
     border: 1px solid var(--error);
 }
-/* .checkbox{
-    min-width:1em;
-    height: 1em;
-    border: 1px solid var(--gray-700);
-
-} */
 
 .checkbox:focus{
     outline: 3px solid var(--info);
